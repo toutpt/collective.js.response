@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.response">
+
+  <browser:resourceDirectory
+    name="collective.js.response"
+    directory="resources"
+    />
+
+  <include file="upgrades.zcml"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.response"
+      directory="profiles/default"
+      description='Extension profile for collective.js.response.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
